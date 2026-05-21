@@ -24,9 +24,9 @@ def load_model_and_vectorizer():
     try:
         model = joblib.load('model/model.pkl')
         vectorizer = joblib.load('model/vectorizer.pkl')
-        print("✅ Model and vectorizer loaded successfully!")
+        print("Model and vectorizer loaded successfully!")
     except FileNotFoundError:
-        print("❌ Error: Model files not found. Please run train.py first.")
+        print(" Error: Model files not found. Please run train.py first.")
         raise
 
 
@@ -491,7 +491,7 @@ body {
         <div class="container">
             <div class="navbar-content">
                 <div class="logo">
-                    <span>🎯</span> SentiAnalyzer
+                    <span></span> SentiAnalyzer
                 </div>
                 <ul class="nav-links">
                     <li><a href="#analyze">Analyze</a></li>
@@ -504,7 +504,7 @@ body {
 
     <header class="header">
         <div class="header-content">
-            <h1>🎯 SentiAnalyzer</h1>
+            <h1> SentiAnalyzer</h1>
             <p>Professional Sentiment Analysis Platform</p>
             <p class="header-subtitle">Analyze text emotions with advanced machine learning</p>
         </div>
@@ -513,18 +513,18 @@ body {
     <div class="container">
         <main class="main-content">
             <section class="about-section" id="about">
-                <h2>📖 About SentiAnalyzer</h2>
+                <h2> About SentiAnalyzer</h2>
                 <div class="about-grid">
                     <div class="about-card">
-                        <h3>🎯 What It Does</h3>
+                        <h3> What It Does</h3>
                         <p>SentiAnalyzer uses advanced machine learning to analyze the emotional sentiment of any text. It classifies content as <strong>Positive</strong> or <strong>Negative</strong> and provides confidence scores to measure prediction reliability.</p>
                     </div>
                     <div class="about-card">
-                        <h3>⚙️ How It Works</h3>
+                        <h3> How It Works</h3>
                         <p>The system uses text preprocessing, feature extraction via TF-IDF vectorization, and trained classification algorithms. Text is cleaned, normalized, and converted to numerical features for model prediction.</p>
                     </div>
                     <div class="about-card">
-                        <h3>💡 Use Cases</h3>
+                        <h3> Use Cases</h3>
                         <p>Perfect for analyzing customer reviews, social media comments, feedback surveys, product ratings, brand sentiment monitoring, and real-time opinion mining from any text source.</p>
                     </div>
                 </div>
@@ -532,7 +532,7 @@ body {
 
             <section class="input-section" id="analyze">
                 <div class="card">
-                    <h2>📝 Analyze Your Text</h2>
+                    <h2> Analyze Your Text</h2>
                     <form id="sentimentForm">
                         <div class="form-group">
                             <label for="textInput">Enter Text for Analysis:</label>
@@ -555,7 +555,7 @@ body {
             <div class="results-container">
                 <section>
                     <div class="card">
-                        <h2>📊 Analysis Result</h2>
+                        <h2> Analysis Result</h2>
                         <div id="resultContent" class="result-content" style="display:none;">
                             <div class="sentiment-badge" id="sentimentBadge"></div>
                             <div class="result-details">
@@ -570,7 +570,7 @@ body {
 
                 <section>
                     <div class="card">
-                        <h2>📈 Statistics</h2>
+                        <h2>Statistics</h2>
                         <div class="stats-grid">
                             <div class="stat-box">
                                 <h3 id="totalAnalyses">0</h3>
@@ -595,7 +595,7 @@ body {
 
             <section class="charts-section">
                 <div class="card">
-                    <h2>📊 Analytics & Insights</h2>
+                    <h2> Analytics & Insights</h2>
                     <div class="chart-grid">
                         <div class="chart-container">
                             <h3>Sentiment Distribution</h3>
@@ -611,7 +611,7 @@ body {
 
             <section>
                 <div class="card">
-                    <h2>📜 Analysis History</h2>
+                    <h2> Analysis History</h2>
                     <div id="historyContent" class="history-content">
                         <p class="no-history">No analysis history yet.</p>
                     </div>
@@ -619,7 +619,7 @@ body {
             </section>
 
             <section class="about-section" id="tech" style="margin-top: 50px;">
-                <h2>🔧 Technology Stack</h2>
+                <h2> Technology Stack</h2>
                 <div class="about-grid" style="margin-top: 25px;">
                     <div class="about-card">
                         <h3>Backend</h3>
@@ -652,14 +652,14 @@ body {
     </div>
 
     <footer class="footer">
-        <h3>🎯 SentiAnalyzer v1.0</h3>
+        <h3> SentiAnalyzer v1.0</h3>
         <p>Advanced Sentiment Analysis with Machine Learning</p>
         <div class="tech-stack">
-            <span>🐍 Python</span>
-            <span>⚡ Flask</span>
-            <span>📊 scikit-learn</span>
-            <span>📈 Chart.js</span>
-            <span>🎨 Modern UI/UX</span>
+            <span> Python</span>
+            <span> Flask</span>
+            <span> scikit-learn</span>
+            <span> Chart.js</span>
+            <span> Modern UI/UX</span>
         </div>
         <p style="margin-top: 20px; opacity: 0.9;">&copy; 2026 SentiAnalyzer. All rights reserved.</p>
     </footer>
@@ -880,9 +880,9 @@ def method_not_allowed(error):
 if __name__ == '__main__':
     load_model_and_vectorizer()
     print("\n" + "="*60)
-    print("🎯 SentiAnalyzer - Professional Sentiment Analysis")
+    print(" SentiAnalyzer - Professional Sentiment Analysis")
     print("="*60)
-    print("🌐 Open your browser to: http://localhost:5000")
-    print("📊 API endpoints available at /health and /predict")
+    print(" Open your browser to: http://localhost:5000")
+    print(" API endpoints available at /health and /predict")
     print("="*60 + "\n")
     app.run(host='0.0.0.0', port=5000, debug=False)
