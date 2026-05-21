@@ -1,0 +1,10 @@
+flask
+streamlit
+scikit-learn
+pandas
+nltk
+joblib
+tqdm
+requests
+numpy
+python-dotenv
