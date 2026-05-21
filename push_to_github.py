@@ -11,13 +11,13 @@ import sys
 def run_command(cmd, description):
     """Run a shell command and handle errors"""
     print(f"\n{'='*60}")
-    print(f"📦 {description}...")
+    print(f" {description}...")
     print(f"{'='*60}")
     print(f"$ {cmd}\n")
     
     result = subprocess.run(cmd, shell=True)
     if result.returncode != 0:
-        print(f"\n❌ Error executing: {cmd}")
+        print(f"\n Error executing: {cmd}")
         return False
     return True
 
@@ -25,7 +25,7 @@ def main():
     os.chdir(r'C:\Users\raisu\OneDrive\Desktop\SentiAnalyzer')
     
     print("\n" + "="*60)
-    print("🎯 SentiAnalyzer - GitHub Push Setup")
+    print(" SentiAnalyzer - GitHub Push Setup")
     print("="*60)
     
     # Step 1: Initialize git (if not already)
@@ -33,11 +33,11 @@ def main():
         if not run_command('git init', 'Initializing Git repository'):
             return False
     else:
-        print("\n✅ Git repository already initialized")
+        print("\n Git repository already initialized")
     
     # Step 2: Add remote
     print("\n" + "="*60)
-    print("⚠️  MANUAL STEP REQUIRED")
+    print("  MANUAL STEP REQUIRED")
     print("="*60)
     print("""
 Please follow these steps to create GitHub repository and push:
@@ -88,7 +88,7 @@ git push -u origin main
     
     print(commands)
     print("\n" + "="*60)
-    print("📋 PASTE THE COMMANDS ABOVE IN YOUR TERMINAL")
+    print(" PASTE THE COMMANDS ABOVE IN YOUR TERMINAL")
     print("="*60 + "\n")
 
 if __name__ == '__main__':
