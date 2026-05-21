@@ -98,7 +98,7 @@ if 'example_text' in st.session_state:
     user_text = st.session_state['example_text']
 
 # Analyze button
-if st.button("🔍 Analyze Sentiment", use_container_width=True, disabled=not api_running):
+if st.button(" Analyze Sentiment", use_container_width=True, disabled=not api_running):
     if not user_text.strip():
         st.warning("Please enter some text to analyze!")
     else:
@@ -114,7 +114,7 @@ if st.button("🔍 Analyze Sentiment", use_container_width=True, disabled=not ap
             # Display result based on sentiment
             if sentiment == "Positive":
                 st.success(
-                    f"✅ **POSITIVE SENTIMENT** - Confidence: **{confidence_percentage:.1f}%**"
+                    f" **POSITIVE SENTIMENT** - Confidence: **{confidence_percentage:.1f}%**"
                 )
             else:
                 st.error(
@@ -122,7 +122,7 @@ if st.button("🔍 Analyze Sentiment", use_container_width=True, disabled=not ap
                 )
             
             # Show cleaned text in expander
-            with st.expander("📋 View Cleaned Text"):
+            with st.expander(" View Cleaned Text"):
                 st.text(cleaned_text)
             
             # Show confidence bar chart
