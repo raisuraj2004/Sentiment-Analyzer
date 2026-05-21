@@ -21,7 +21,7 @@ html_content = '''<!DOCTYPE html>
         <!-- Header -->
         <header class="header">
             <div class="header-content">
-                <h1>📊 SentiAnalyzer</h1>
+                <h1> SentiAnalyzer</h1>
                 <p>Advanced Sentiment Analysis Tool</p>
             </div>
         </header>
@@ -743,4 +743,4 @@ with open('static/script.js', 'w', encoding='utf-8') as f:
     f.write(js_content)
 print('✓ Created static/script.js')
 
-print('\n✅ All UI files created successfully!')
+print('\n All UI files created successfully!')
